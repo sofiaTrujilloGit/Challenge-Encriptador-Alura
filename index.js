@@ -11,7 +11,6 @@ const Copiar = document.querySelector('.Copiar');
 function encriptar(textoEncriptado) {
     let codigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     textoEncriptado = textoEncriptado.toLowerCase();
-    console.log('click');
     for(let i=0; i < codigo.length; i++) {
         if(textoEncriptado.includes(codigo[i][0])) {
             textoEncriptado = textoEncriptado.replaceAll(codigo[i][0], codigo[i][1]);           
@@ -51,7 +50,7 @@ document.querySelector('.Copiar').addEventListener('click', function() {
     const mensaje = document.querySelector('.mensaje');
     const texto = document.querySelector('.texto');
     texto.value = mensaje.value;
-    alert('Texto encriptado copiado al área de entrada de texto');
+    alert('Texto encriptado copiado, ahora puedes Desencriptarlo!');
 });
 
 
