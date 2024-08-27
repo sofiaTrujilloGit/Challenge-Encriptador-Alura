@@ -1,3 +1,4 @@
+// Maria Sofia Trujillo Muza 
 const texto = document.querySelector('.texto');
 const mensaje = document.querySelector('.mensaje');
 const lupa = document.querySelector('.lupa');
